@@ -155,6 +155,14 @@ main-page-title {
 /*INDEX STYLES END*/
 
 /*GALLERY STYLES*/
+#instafeed a img{
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+}
+/*GALLERY STYLES END*/
+
+/*ABOUT PAGE STYLES*/
 .profile-photo{
     margin: 50px 0 50px 0;
     height: 200px;
@@ -207,7 +215,7 @@ main-page-title {
 .skills p{
     color: rgba(255, 255, 255, 0.8);
 }
-/*GALLERY STYLES END*/
+/*ABOUT PAGE STYLES END*/
 .footer {
     height: 114px;
     flex: 0 0 auto;

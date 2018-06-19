@@ -54,6 +54,7 @@
                         accessToken: '270481287.1677ed0.27cfe1d6561f43b8b1c5fc4186fa9cc8',
                         clientID: '27cfe1d6561f43b8b1c5fc4186fa9cc8',
                         limit: '300',
+                        resolution: 'standard_resolution',
                         filter: function(image) {
                             return image.tags.indexOf('card') >= 0;
                         }
@@ -85,9 +86,8 @@
                 </li>
             </ul>
         </div>
-        <div class="row" style="margin-top: 40px;">
-            <div class="col">
-                <div id="instafeed"></div>
+        <div class="row justify-content-center" style="margin-top: 40px;">
+            <div class="col text-center" id="instafeed">
             </div>
         </div>
         <div class="row footer">

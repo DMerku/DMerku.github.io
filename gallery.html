@@ -46,19 +46,11 @@
 
         });
     </script>
-                    <script type="text/javascript">
-                    var feed = new Instafeed({
-                        get: 'tagged',
-                        tagName: 'awesome',
-                        clientId: '3644a62d749244f4bf5babfca634d0ff'
-                    });
-                    feed.run();
-                </script>
                 <script type="text/javascript">
                     var feed = new Instafeed({
                         get: 'user',
                         userId: '270481287',
-                        clientId: '3644a62d749244f4bf5babfca634d0ff',
+                        accessToken: '270481287.1677ed0.27cfe1d6561f43b8b1c5fc4186fa9cc8',
                         filter: function(image) {
                             return image.tags.indexOf('card') >= 0;
                         }

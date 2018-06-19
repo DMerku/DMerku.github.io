@@ -84,7 +84,7 @@ main-page-title {
 
 .main-block {
     margin-top: 40px;
-    background: url(image/profile-photo2.jpg) no-repeat;
+    background: url(/image/profile-photo2.jpg) no-repeat;
     background-size: 150%;
     background-position: 100% 40%;
     background-attachment: scroll;
@@ -108,14 +108,14 @@ main-page-title {
 }
 
 #block-gallery {
-    background: url(image/gallery.jpg) no-repeat;
+    background: url(/image/gallery.jpg) no-repeat;
     background-position: center;
     background-size: 150%;
     background-position: 100% 50%;
 }
 
 #block-project {
-    background: url(image/project.jpg) no-repeat;
+    background: url(/image/project.jpg) no-repeat;
     background-position: center;
     background-size: 150%;
     background-position: 70% 50%;
@@ -159,7 +159,7 @@ main-page-title {
     margin: 50px 0 50px 0;
     height: 200px;
     width: 200px;
-    background: url(image/IMG_4625.jpg);
+    background: url(/image/IMG_4625.jpg);
     background-position: 58% 37%;
     background-size: 330%;
     border: 1px solid white;

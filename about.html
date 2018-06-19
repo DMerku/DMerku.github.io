@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Fontawesome CSS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Merkulov</title>
+    <script>
+        var h_hght = 0; // высота шапки
+        var h_mrg = 0; // отступ когда шапка уже не видна
+
+        $(function() {
+
+            var elem = $('#nav-top');
+            var elem2 = $('#logo');
+            var elem3 = $('#nav-top-mobile');
+            var top = $(this).scrollTop();
+
+            if (top > h_hght) {
+                elem.css('top', h_mrg);
+                elem2.css('top', h_mrg);
+                elem3.css('top', h_mrg);
+            }
+
+            $(window).scroll(function() {
+                top = $(this).scrollTop();
+
+                if (top + h_mrg < h_hght) {
+                    elem.css('top', (h_hght - top));
+                    elem2.css('top', (h_hght - top));
+                    elem3.css('top', (h_hght - top));
+                } else {
+                    elem.css('top', h_mrg);
+                    elem2.css('top', h_mrg);
+                    elem3.css('top', h_mrg);
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header row">
+            <a class="nav-link text-light" id="logo" href="index.html">MERKULOV.ME</a>
+            <nav class="nav justify-content-end" id="nav-top" style="background: rgb(20, 20, 20);">
+                <a class="nav-link text-light" href="index.html">HOME</a>
+                <a class="nav-link text-light" href="project.html">PROJECTS</a>
+                <a class="nav-link text-light" href="gallery.html">GALLERY</a>
+                <a class="nav-link text-light myActive" href="about.html">ABOUT ME</a>
+            </nav>
+            <!--Mobile phones nav-->
+            <ul class="nav nav-tabs justify-content-end" id="nav-top-mobile" style="background: rgb(20, 20, 20);">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></a>
+                    <div class="dropdown-menu" style="background: rgb(20, 20, 20);">
+                        <a class="dropdown-item text-light" href="index.html">HOME</a>
+                        <a class="dropdown-item text-light" href="project.html">PROJECTS</a>
+                        <a class="dropdown-item text-light" href="gallery.html">GALLERY</a>
+                        <a class="dropdown-item text-light" href="about.html">ABOUT ME</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="row main-block" style="margin-top: 80px; background:rgb(39, 37, 37);">
+            <div class="col-sm-4">
+                <div class="profile-photo mx-auto"></div>
+            </div>
+            <div class="col-sm-8">
+                <ul class="list-group education">
+                    <li class="list-group-item"><img src="image/Polytech.png" height="50" alt="Peter the Great Logo" class="list-image">
+                        <h5>Peter the Great Saint-Petersburg Polytichnic University 2012-2016</h5>
+                        <h6>Bachelor in&nbsp;Infortmation Systems and Technologies</h6>
+                    </li>
+                    <li class="list-group-item"><img src="image/Polytech.png" height="50" alt="Peter the Great Logo" class="list-image">
+                        <h5>Peter the Great Saint-Petersburg Polytichnic University 2016-2018</h5>
+                        <h6>Master in&nbsp;Information Science and Computer Engineering</h6>
+                    </li>
+                    <li class="list-group-item"><img src="image/LUH.png" height="50" alt="LUH Logo" class="list-image">
+                        <h5>Gottfried Wilhelm Leibniz Universit&auml;t Hannover 2016-2018</h5>
+                        <h6>Master in&nbsp;Mechatronics</h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" style="padding: 0 15px 0 15px;">
+            <div class="col" style="padding: 0 15px 0 15px;">
+                <h5 class="text-light">My&nbsp;contacts</h5>
+                <p class="text-light" style="text-align: justify;">E-mail: <a href="mailto:work.dmerkulov@gmail.com" class="alert-link">work.dmerkulov@gmail.com</a> <br>Socials: <a href="https://www.xing.com/profile/Daniil_Merkulov/" class="alert-link">XING</a> <a href="https://www.linkedin.com/in/daniil-merkulov-81b96a156/" class="alert-link">LinkedIn</a> <a href="https://www.facebook.com/dmerku" class="alert-link">facebook</a> <a href="https://vk.com/d_merku" class="alert-link">vk.com</a> <br>Skype: ch4mpl8</p>
+            </div>
+        </div>
+        <div class="row" style="padding: 0 15px 0 15px;">
+            <div class="col" style="padding: 0 15px 0 15px;">
+                <h5 class="text-light">My&nbsp;experience</h5>
+                <ul class="list-group experience">
+                    <li class="list-group-item">
+                        <h5>Maico-Mannesmann company</h5>
+                        <h6>03.2018-05.2018</h6>
+                        <p>I&nbsp;was working for three months for this company. I&nbsp;was a&nbsp;kind of&nbsp;front-end developer there. During this period I&rsquo;ve met <span style="font-weight: bold;">Content Managment System&nbsp;&mdash; WordPress</span> and started learning script languages such as&nbsp;JavaScript and PHP. The task was to&nbsp;implement and remove some design elements in&nbsp;<a href="https://www.orthodoxographia.com" class="alert-link">orthodoxographia.com</a>. A&nbsp;little bit more information you can find <a href="project.html" class="alert-link">here</a>.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Course &laquo;HTML/CSS. Basics of&nbsp;website making&raquo;</h5>
+                        <h6>12.2017-01.2018</h6>
+                        <p>During this course I&rsquo;ve learnt basics of&nbsp;website making. I&rsquo;ve learnt such technologies as&nbsp;<span style="font-weight: bold;">HTML, CSS, Preprocessors, Fixed and Adaptive layouts, Bootstrap, Adobe Assets</span>. In&nbsp;the end of&nbsp;the course I&rsquo;ve made <a href="https://github.com/DMerku/final-project" class="alert-link">the website</a> which is&nbsp;based on&nbsp;fixed layout according to&nbsp;given topic.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col skills" style="padding: 0 15px 0 15px;">
+                <h5 class="text-light">My&nbsp;skills</h5>
+                <p>While I&nbsp;was studying in&nbsp;Bachelor I&nbsp;had deal with <span style="font-weight: bold;">C#, C++, Java</span> programming languages and with such IDEs as&nbsp;<span style="font-weight: bold;">MS&nbsp;Visual Studio, NetBeans, Eclipse</span>. I&nbsp;was also familiar with <span style="font-weight: bold;">Git and SVN</span> systems. By&nbsp;mentioning these technologies&nbsp;I confirm that my&nbsp;level of&nbsp;using them is&nbsp;a&nbsp;beginner. I&rsquo;m learning <span style="font-weight: bold;">HTML, CSS and Javascript</span>. Actually, this web-site was made by&nbsp;my&nbsp;self with using Bootstrap framework.<br>I&rsquo;m learning English and German languages. At&nbsp;the moment my&nbsp;<span style="font-weight: bold;">English level is&nbsp;B1-B2</span> and <span style="font-weight: bold;">German level is&nbsp;A1</span>.</p>
+                <h5 class="text-light">My&nbsp;hobbies</h5>
+                <p>I&nbsp;like to&nbsp;listen to&nbsp;music. I&nbsp;prefer to&nbsp;listen to&nbsp;Moby while I&rsquo;m coding. It&nbsp;is&nbsp;so&nbsp;relax and light music that&nbsp;I can concentrate on&nbsp;my&nbsp;task. In&nbsp;my&nbsp;free time&nbsp;I visit gym, read books, watch TV-series or&nbsp;learn something. While I&rsquo;m walking around somewhere&nbsp;I like to&nbsp;take photos. You can check my&nbsp;<a href="gallery.html" class="alert-link">gallery</a>.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+        </div>
+        <div class="row footer">
+            <div class="col">
+                <p class="text-center">
+                    <a class="navbar-brand text-left" href="https://www.instagram.com/d_merku/">
+<i class="fab fa-instagram"></i>
+</a>
+                    <a class="navbar-brand text-left" href="https://www.facebook.com/dmerku">
+<i class="fab fa-facebook-square"></i>
+</a>
+                    <a class="navbar-brand text-left" href="https://vk.com/d_merku">
+<i class="fab fa-vk"></i>
+</a>
+                    <a class="navbar-brand text-left" href="https://www.xing.com/profile/Daniil_Merkulov/">
+<i class="fab fa-xing-square"></i>
+</a>
+                    <a class="navbar-brand text-left" href="https://www.linkedin.com/in/daniil-merkulov-81b96a156/">
+<i class="fab fa-linkedin"></i>
+</a>
+                </p>
+                <p class="text-center">&copy;Merkulov Daniil</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+
+</html>
